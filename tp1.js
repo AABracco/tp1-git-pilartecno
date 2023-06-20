@@ -18,7 +18,12 @@ function extractValues(data) {
 */
 
 function arrayToLengthCounters(array) {
-  // Tu código aquí
+  const obj = {};
+  array.forEach(element => {
+    const value = element.length;
+    obj[element] = value;
+  });
+  return obj;
 }
 
 /*  
